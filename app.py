@@ -41,8 +41,8 @@ if uploaded_file is not None:
     st.sidebar.header("Filter Options")
 
     # Date range filter
-    start_date = st.sidebar.date_input("Start date", value=datetime(2023, 10, 20))
-    end_date = st.sidebar.date_input("End date", value=datetime(2023, 10, 21))
+    start_date = st.sidebar.date_input("Start date", value=datetime(2023, 3, 15))
+    end_date = st.sidebar.date_input("End date", value=datetime(2023, 10, 28))
 
     # Message type filter: get all unique types from messages
     types = sorted(list({msg.get("type", "Unknown") for msg in messages}))
