@@ -83,7 +83,7 @@ if uploaded_file is not None:
             reactions = msg.get("reactions", [])
             found = False
             for react in reactions:
-                emoji_name = react.get("emoji", {}).get("name", "").lower()
+                emoji_name = react.get("emoji", {}).get("code", "").lower()
                 if reaction_filter.lower() in emoji_name:
                     found = True
                     break
